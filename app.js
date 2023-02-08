@@ -7,20 +7,35 @@ for (let i = 1; i <= 6; i++) {
     rowsNum = `row${i}`
     rowsChildrens[rowsNum] = document.querySelector(`.${rowsNum}`).children
 }
+console.log(rowsChildrens)
 
 document.getElementById("submit_word").addEventListener("click", () => {
     ++boxesNumber
     let user_word = []
-    // const user_word = document.getElementById("input_word").value.split("")
+
     console.log(rowsChildrens["row1"][0].children[0].hasAttribute("disabled"))
     for (let i in rowsChildrens.length) {
         if (rowsChildrens[`row1`][i].children[0].hasAttribute("disabled") === false)
-            for (let x = 0; i <= 4; i++) {
+            for (let x = 0; x <= 4; x++) {
                 user_word.push(rowsChildrens["row1"][x])
             }
     }
     console.log(user_word, current_word, boxesNumber)
 
+    // const user_word = document.getElementById("input_word").value.split("")
+    // * 2 sposob
+    // ++boxesNumber
+    // let user_word = []
+    // console.log(rowsChildrens["row1"][0].children[0].hasAttribute("disabled"))
+    // for (let i in rowsChildrens.length) {
+    //     if (rowsChildrens[`row1`][i].children[0].hasAttribute("disabled") === false)
+    //         for (let x = 0; x <= 4; x++) {
+    //             user_word.push(rowsChildrens["row1"][x])
+    //         }
+    // }
+    // console.log(user_word, current_word, boxesNumber)
+
+    // * 1 sposob
     // for (const [index, user_letter] of user_word.entries()) {
     //     if (current_word.includes(user_letter)) {
     //         const letter_index = current_word.indexOf(user_letter)
