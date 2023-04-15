@@ -29,18 +29,19 @@ function checkWord() {
                         rowsChildrens[`row${boxesNumber}`][x].children[0].setAttribute("disabled", "disabled")
 
                         if (user_letter === current_word[x]) {
-                            rowsChildrens[`row${boxesNumber}`][x].children[0].style.backgroundColor = "rgb(116, 173, 31)"
+                            rowsChildrens[`row${boxesNumber}`][x].children[0].style.backgroundColor = "rgb(116, 203, 31)"
                             if (user_letter != correctLetters[x] && current_word[x] === user_letter) {
                                 currentPoints++
                                 correctLetters[x] = user_letter
                             }
                         } else if (current_word.includes(user_letter))
-                            rowsChildrens[`row${boxesNumber}`][x].children[0].style.backgroundColor = "rgb(145, 145, 13)"
+                            rowsChildrens[`row${boxesNumber}`][x].children[0].style.backgroundColor = "rgb(185, 185, 13)"
                         else rowsChildrens[`row${boxesNumber}`][x].children[0].style.backgroundColor = "grey"
                     }
                 }
             }
         }
+        console.log()
 
         if (boxesNumber < 6 && currentPoints < 5)
             for (let idx = 0; idx < 1; idx++) {
