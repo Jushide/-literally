@@ -10,6 +10,17 @@
 body {
     background-color: #201f21;
 }
+.box > input {
+    text-align: center;
+    background-color: #201f21;
+    border: #2b2a2c 4px solid;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
 .word-table {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
@@ -24,17 +35,17 @@ body {
         font-size: 30px;
         text-align: center;
         column-gap: 15px;
-        > * > * {
-            text-align: center;
-            background-color: #201f21;
-            border: #2b2a2c 4px solid;
-            border-radius: 20px;
-            width: 100px;
-            height: 100px;
-            color: #fff;
-            font-size: 30px;
-            font-weight: bold;
-        }
+        // > * > * {
+        //     text-align: center;
+        //     background-color: #201f21;
+        //     border: #2b2a2c 4px solid;
+        //     border-radius: 20px;
+        //     width: 100px;
+        //     height: 100px;
+        //     color: #fff;
+        //     font-size: 30px;
+        //     font-weight: bold;
+        // }
         .box11 {
             grid-column: 2/3;
             grid-row: 1/2;
@@ -66,17 +77,17 @@ body {
         font-size: 30px;
         text-align: center;
         column-gap: 15px;
-        > * > * {
-            text-align: center;
-            background-color: #201f21;
-            border: #2b2a2c 4px solid;
-            border-radius: 20px;
-            width: 100px;
-            height: 100px;
-            color: #fff;
-            font-size: 30px;
-            font-weight: bold;
-        }
+        // > * > * {
+        //     text-align: center;
+        //     background-color: #201f21;
+        //     border: #2b2a2c 4px solid;
+        //     border-radius: 20px;
+        //     width: 100px;
+        //     height: 100px;
+        //     color: #fff;
+        //     font-size: 30px;
+        //     font-weight: bold;
+        // }
         .box21 {
             grid-column: 2/3;
             grid-row: 3/4;
@@ -268,17 +279,6 @@ body {
     }
 }
 
-.correct {
-    background-color: greenyellow;
-}
-
-.not-found {
-    background-color: grey;
-}
-
-.wrong-place {
-    background-color: yellow;
-}
 .button-area {
     display: grid;
     grid-column: 4/5;

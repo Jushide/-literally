@@ -11,6 +11,18 @@ body {
   background-color: #201f21;
 }
 
+.box > input {
+  text-align: center;
+  background-color: #201f21;
+  border: #2b2a2c 4px solid;
+  border-radius: 20px;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .word-table {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -27,18 +39,6 @@ body {
   font-size: 30px;
   text-align: center;
   column-gap: 15px;
-}
-
-.word-table .row1 > * > * {
-  text-align: center;
-  background-color: #201f21;
-  border: #2b2a2c 4px solid;
-  border-radius: 20px;
-  width: 100px;
-  height: 100px;
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .word-table .row1 .box11 {
@@ -76,18 +76,6 @@ body {
   font-size: 30px;
   text-align: center;
   column-gap: 15px;
-}
-
-.word-table .row2 > * > * {
-  text-align: center;
-  background-color: #201f21;
-  border: #2b2a2c 4px solid;
-  border-radius: 20px;
-  width: 100px;
-  height: 100px;
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .word-table .row2 .box21 {
@@ -309,18 +297,6 @@ body {
 .word-table .row6 .box65 {
   grid-column: 6/7;
   grid-row: 7/8;
-}
-
-.correct {
-  background-color: greenyellow;
-}
-
-.not-found {
-  background-color: grey;
-}
-
-.wrong-place {
-  background-color: yellow;
 }
 
 .button-area {
