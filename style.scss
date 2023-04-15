@@ -299,3 +299,16 @@ body {
         height: 100px;
     }
 }
+
+#win {
+    color: rgb(164, 223, 76);
+    text-align: center;
+    margin: 20px;
+    display: none;
+}
+#lose {
+    color: rgb(231, 62, 62);
+    text-align: center;
+    margin: 20px;
+    display: none;
+}

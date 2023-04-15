@@ -320,3 +320,17 @@ body {
   width: 100px;
   height: 100px;
 }
+
+#win {
+  color: #a4df4c;
+  text-align: center;
+  margin: 20px;
+  display: none;
+}
+
+#lose {
+  color: #e73e3e;
+  text-align: center;
+  margin: 20px;
+  display: none;
+}
