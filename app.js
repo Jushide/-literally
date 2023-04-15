@@ -1,8 +1,8 @@
 "use strict"
+import { data } from "./data.js"
 
-const randomizedWordIdx = Math.floor(Math.random() * 2)
-const words = ["siara", "KroWa"]
-const current_word = words[randomizedWordIdx].toLowerCase().split("")
+const randomizedWordIdx = Math.floor(Math.random() * 5)
+const current_word = data[randomizedWordIdx].toLowerCase().split("")
 let boxesNumber = 1
 let tries = 1
 let currentPoints = 0
@@ -53,6 +53,8 @@ function checkWord() {
             document.getElementById("win").innerHTML += ` ${tries} tries`
             document.getElementById("win").style.setProperty("display", "block")
         } else if (currentPoints < current_word.length && tries === 6) {
+            document.getElementById("lose").innerHTML =
+                `The word was: ${current_word}` + `. ${document.getElementById("lose").innerHTML}`
             document.getElementById("lose").style.setProperty("display", "block")
         } else tries++
 
@@ -68,3 +70,6 @@ document.body.addEventListener("keyup", e => {
 })
 
 document.getElementById("submit_word").addEventListener("click", checkWord)
+document.getElementById("reset_game").addEventListener("click", () => {
+    window.location.reload()
+})
