@@ -11,6 +11,10 @@ body {
   background-color: #201f21;
 }
 
+h5 {
+  color: #fff;
+}
+
 .box > input {
   text-align: center;
   background-color: #201f21;
@@ -115,18 +119,6 @@ body {
   column-gap: 15px;
 }
 
-.word-table .row3 > * > * {
-  text-align: center;
-  background-color: #201f21;
-  border: #2b2a2c 4px solid;
-  border-radius: 20px;
-  width: 100px;
-  height: 100px;
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
-}
-
 .word-table .row3 .box31 {
   grid-column: 2/3;
   grid-row: 4/5;
@@ -162,18 +154,6 @@ body {
   font-size: 30px;
   text-align: center;
   column-gap: 15px;
-}
-
-.word-table .row4 > * > * {
-  text-align: center;
-  background-color: #201f21;
-  border: #2b2a2c 4px solid;
-  border-radius: 20px;
-  width: 100px;
-  height: 100px;
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .word-table .row4 .box41 {
@@ -213,18 +193,6 @@ body {
   column-gap: 15px;
 }
 
-.word-table .row5 > * > * {
-  text-align: center;
-  background-color: #201f21;
-  border: #2b2a2c 4px solid;
-  border-radius: 20px;
-  width: 100px;
-  height: 100px;
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
-}
-
 .word-table .row5 .box51 {
   grid-column: 2/3;
   grid-row: 6/7;
@@ -260,18 +228,6 @@ body {
   font-size: 30px;
   text-align: center;
   column-gap: 15px;
-}
-
-.word-table .row6 > * > * {
-  text-align: center;
-  background-color: #201f21;
-  border: #2b2a2c 4px solid;
-  border-radius: 20px;
-  width: 100px;
-  height: 100px;
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .word-table .row6 .box61 {
@@ -341,4 +297,41 @@ body {
   position: absolute;
   top: 30px;
   right: 40px;
+}
+
+@media (max-width: 550px) {
+  .button-area input[type="submit"] {
+    font-size: 13px;
+    width: 60px;
+    height: 60px;
+  }
+  .box > input {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+  .word-table .row1 {
+    column-gap: 5px;
+    height: 60px;
+  }
+  .word-table .row2 {
+    column-gap: 5px;
+    height: 60px;
+  }
+  .word-table .row3 {
+    column-gap: 5px;
+    height: 60px;
+  }
+  .word-table .row4 {
+    column-gap: 5px;
+    height: 60px;
+  }
+  .word-table .row5 {
+    column-gap: 5px;
+    height: 60px;
+  }
+  .word-table .row6 {
+    column-gap: 5px;
+    height: 50px;
+  }
 }

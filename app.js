@@ -1,7 +1,7 @@
 "use strict"
 import { data } from "./data.js"
 
-const randomizedWordIdx = Math.floor(Math.random() * 5)
+const randomizedWordIdx = Math.floor(Math.random() * data.length)
 const current_word = data[randomizedWordIdx].toLowerCase().split("")
 let boxesNumber = 1
 let tries = 1
